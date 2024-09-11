@@ -11,5 +11,8 @@ namespace IdentidadIntegral.Models
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public bool Enabled { get; set; }
+
+        public ICollection<User> Users { get; set; }
+        public ICollection<RoleAction> RoleActions { get; set; }
     }
 }

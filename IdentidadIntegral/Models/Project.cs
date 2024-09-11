@@ -15,5 +15,6 @@ namespace IdentidadIntegral.Models
         public bool Enabled { get; set; }
         public Company Company { get; set; }
         public ICollection<Module> Modules { get; set; }
+        public ICollection<UserProject> UserProjects { get; set; }
     }
 }
