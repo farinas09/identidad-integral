@@ -1,7 +1,10 @@
-﻿namespace IdentidadIntegral.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace IdentidadIntegral.Models
 {
     public class User
     {
+        [Key]
         public int IdUser { get; set; }
         public int IdCompany { get; set; }
         public string Name { get; set; }
