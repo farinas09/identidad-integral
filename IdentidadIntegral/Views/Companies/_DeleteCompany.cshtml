@@ -1,0 +1,27 @@
+﻿@model IdentidadIntegral.Models.Company
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar Compañía</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            ¿Estás seguro de que quieres eliminar la compañía @Html.DisplayFor(model => model.Name)?
+        </div>
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="IdCompany" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <a class="btn btn-danger" asp-action="Delete">Eliminar</a>
+        </div>
+    </div>
+</div>
