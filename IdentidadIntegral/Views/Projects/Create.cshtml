@@ -9,7 +9,7 @@
     <div class="col-md-6">
         <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Crear Compañía</h3>
+            <h3 class="card-title">Nuevo Proyecto</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
@@ -53,19 +53,20 @@
             </div>
             </div>
             <!-- /.card-body -->
-            <div class="card-footer">
-                <input type="submit" value="Crear" class="btn btn-primary" />
+            <div class="card-footer row">
+                    <div class="col">
+                        <a class="btn btn-secondary" asp-action="Index">
+                            <i class="fa fa-arrow-left"></i>
+                            Atrás
+                        </a>
+                        <input type="submit" value="Crear" class="btn btn-primary" />
+                    </div>
+                
+                    
             </div>
         </form>
     </div>
 </div>
-</div>
-
-<div>
-    <a class="btn btn-secondary" asp-action="Index">
-        <i class="fa fa-arrow-left"></i>
-        Atrás
-    </a>
 </div>
 
 @if (!ViewData.ModelState.IsValid)
